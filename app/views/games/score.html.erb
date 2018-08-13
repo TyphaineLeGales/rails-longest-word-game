@@ -1,3 +1,9 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 <h1 style="margin:8vw;font-family:Helvetica;">Result</h1>
 
-<%= @result %>
+<div class="d-flex justify-content-center align-items-baseline">
+<p  style="padding:3vw;"> <strong><%= @result[:message] %> </strong> </p>
+<p style="padding:3vw;"> <br>you scored <%= @result[:score] %> points !</p>
+<p style="padding:3vw;"> <br><br><%= link_to "Play again", new_path %> </p>
+</div>
